@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"></head><head></head><body>
+
+<body>
+
+    <div class="navbar">
+      <div class="logo">
+            <p>logo</p>
+    </div>
+    <div class="info">
+    <a href="more">contacts</a>
+    <a href="more">services</a>
+    <button class="login">login </button>
+
+        </div>
+    </div>
+<div class="box">
+    <h1>login</h1>
+    <form method="post">
+        <div class="txt_field">
+            <span></span>
+            <input type="text" required="">
+            <label>username</label>
+            
+    
+        <div class="txt_field">
+            <span></span>
+            <input type="text" required="">
+            <label>password</label>
+
+            
+                <div class="txt_field">
+                    <span></span>
+                    <input type="text" required="">
+                    <label>Email adress</label>
+        </div>
+        <div class="pass">forgot password ?
+            <input type="submit" value="login">
+        </div>
+        
+        <div class="signuplink">
+            Not a member<a href="#">sign up</a>
+        </div>
+    
+</div>
+<div class="box2">
+    <img class="kk" src="icon.webp">
+    <h1>sign up</h1>
+    <form>
+    <input type="email" class="input-box" placeholder="your email" >
+    <hr>
+    <input type="password" class="input-box" placeholder="your password">
+         <p>i agree to  the terms of services<span><input type="checkbox"></span></p>
+         <input type="submit" value="sign up">  
+         <hr>
+         <p class="or">or</p>
+         <hr>
+         <input type="submit" value="login with google">
+         <p>do you have an account? <button>sign in</button> </p> 
+         
+    
+         
+         </form>
+
+</div>
+</body>
+<style>
+    
+    .navbar{
+        width: 99vw;
+        height: 30vh;
+        background-color: bisque;
+    
+    }
+    .logo{
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+        padding-left: 45px;
+        font-size: xx-large;
+        font-weight: bolder;
+        margin-left: 60px;
+    }
+    .info{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 70vw;
+        margin-left: 500px;
+    }
+    .info a {
+        position: relative;
+        text-decoration: none;
+        font-size: medium;
+        margin-left: 50px;
+        
+  }
+  .info .login{
+    width: 100px;
+    height: 40px;
+    border: 2px solid#fff;
+    background-color: transparent;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-left: 40px;
+    
+    
+  }
+.box{
+    margin-left: 35vw;
+    width: 400px;
+    background-color: antiquewhite;
+    justify-content: center;
+    height: 70vh;
+}
+.box h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+.box form{
+    padding: 0 40PX;
+    box-sizing: border-box;
+}
+.box .txt_field{
+    position: relative;
+    border-bottom: 1px solid #adadad;
+    margin:25px 0;
+}
+.txt_field input {
+    width: 100%;
+    height: 40px;
+    padding: 0 5px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: whitesmoke;
+}
+.txt_field label{
+    color: #adadad;
+    position:relative;
+    top: 40%;
+    left: 5px;
+    transform: tranformY(-50);
+    transition: 5s;
+}
+.txt_field span::before{
+    content: '';
+    position:absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #2691d6;
+    transition: 5s;
+}
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+    top: -5px;
+    color: #2691d6;
+}
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+    width: 100%;
+
+}
+.pass{
+    margin: -5px 0 20px 5px;
+    color: #a6a6a6;
+    cursor: pointer;
+}
+.pass:hover{
+    text-decoration: wavy;
+    
+}
+input[type="submit"]{
+    color:#e9f4fb;
+    border-radius: 50px;
+    background-color: #2691d6;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+cursor: pointer;
+}
+.signuplink{
+margin: 30px 20px;
+text-align: center;
+font-size: medium;
+color:#666666;
+}
+.signuplink a{
+    text-decoration: none;
+    color: #2691d6;
+    cursor: pointer;
+}
+.signuplink :hover{
+text-decoration: underline;
+}
+.box2{
+    width: 400px;
+    background-color: rgb(189, 197, 197);
+    padding: 20px;
+    margin: 8% auto 0;
+    box-shadow: 0 0 30px 0 rgba(0,0,0,0.3);
+    background-image: url(lock.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+.box2 h1{
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.or{
+    text-align: center;
+}
+.kk{
+    width: 70px;
+    text-align: center;
+}
+
+
+</style>
+</div></form></div></body></html>
